@@ -12,6 +12,7 @@ body {
     font-family: sans-serif;
     margin: 0;
     padding: 0;
+    text-align: center;
 }
 
 header {
@@ -34,14 +35,33 @@ button {
     padding: 10px 20px;
     border:
 
+.centerImage {
+    display: block;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+}
+.centerImage img {
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-height: 100%;
+    max-width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+        
 </style>
     
 </head>
 <body>
     <header>
         <div class="hero-container">
-            <img src="banner-image.jpg" alt="Banner Image">
-            <h1>Empowering Aspiring Artists</h1>
+            <div id="bannerimg">
+            <img src="https://images.unsplash.com/photo-1617814501989-115aeaca5a91?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Banner Image">
+            </div>
+                <h1>Pentrokes for Progress</h1>
             <button>Learn More</button>
             <button>Support Us</button>
         </div>
